@@ -2,9 +2,10 @@
 from langchain_openai import ChatOpenAI
 from browser_use import Browser, Agent
 
-import os
-os.environ["HTTP_PROXY"]  = "http://127.0.0.1:7890"
-os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+# optional if you have proxy
+# import os
+# os.environ["HTTP_PROXY"]  = "http://127.0.0.1:7890"
+# os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -13,8 +14,8 @@ import asyncio
 
 # llm = ChatXAI(model="grok-2-1212")
 llm = ChatOpenAI(
-    base_url="",
-    api_key='',
+    # base_url="",
+    # api_key='',
     model="gpt-4o",
     )
 
