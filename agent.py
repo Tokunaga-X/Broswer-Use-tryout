@@ -13,8 +13,8 @@ import asyncio
 
 # llm = ChatXAI(model="grok-2-1212")
 llm = ChatOpenAI(
-    base_url="https://api.aiproxy.io/v1",
-    api_key='sk-r3KGkm5SHRGeJ5zOXpOK4fjMNaG1DUGz2WAvjePb4NPcwbe5',
+    base_url="",
+    api_key='',
     model="gpt-4o",
     )
 
